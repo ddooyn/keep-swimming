@@ -6,186 +6,134 @@
     version="2.0"
   >
     <channel>
-        <title><![CDATA[Comet log]]></title>
-        <link>https://comet-land-blog.vercel.app</link>
+        <title><![CDATA[ddoolog]]></title>
+        <link>https://ddoolog.vercel.app</link>
         <description>
-          <![CDATA[I like to share my knowledge.]]>
+          <![CDATA[Keep Dev Swimming 🌊🏊️  ]]>
         </description>
         <language>en</language>
-        <lastBuildDate>2022-03-26</lastBuildDate>
+        <lastBuildDate>2022-11-02</lastBuildDate>
         <item>
-    <title><![CDATA[Comet land guide]]></title>
-    <link>https://comet-land-blog.vercel.app/how-to-start</link>
-    <pubDate>2022-03-26</pubDate>
-    <guid isPermaLink="false">https://comet-land-blog.vercel.app/how-to-start</guid>
+    <title><![CDATA[leetcode | Move Zeroes]]></title>
+    <link>https://ddoolog.vercel.app/221102</link>
+    <pubDate>2022-11-02</pubDate>
+    <guid isPermaLink="false">https://ddoolog.vercel.app/221102</guid>
     <description>
-    <![CDATA[how to start]]>
+    <![CDATA[Top Interview Questions - Array]]>
     </description>
     <content:encoded>
-      <![CDATA[<p><a href="https://lgtm.com/projects/g/hyesungoh/comet-land/alerts/" target="_blank" rel="noopener noreferer"><img src="https://img.shields.io/lgtm/alerts/g/hyesungoh/comet-land.svg?logo=lgtm&#x26;logoWidth=18" alt="Total alerts"></a> <a href="https://lgtm.com/projects/g/hyesungoh/comet-land/context:javascript" target="_blank" rel="noopener noreferer"><img src="https://img.shields.io/lgtm/grade/javascript/g/hyesungoh/comet-land.svg?logo=lgtm&#x26;logoWidth=18" alt="Language grade: JavaScript"></a> <a href="https://github.com/hyesungoh/comet-land/actions/workflows/CI.yml" target="_blank" rel="noopener noreferer"><img src="https://github.com/hyesungoh/comet-land/actions/workflows/CI.yml/badge.svg" alt="Continious Intergration"></a> <a href="https://codecov.io/gh/hyesungoh/comet-land" target="_blank" rel="noopener noreferer"><img src="https://codecov.io/gh/hyesungoh/comet-land/branch/main/graph/badge.svg?token=TA7LT3RQ1P" alt="codecov"></a> <a href="https://dashboard.cypress.io/projects/yiddyz/runs" target="_blank" rel="noopener noreferer"><img src="https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/yiddyz&#x26;style=flat&#x26;logo=cypress" alt="blog"></a> <a href="https://dashboard.cypress.io/projects/inc4yo/runs" target="_blank" rel="noopener noreferer"><img src="https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/inc4yo&#x26;style=flat&#x26;logo=cypress" alt="resume"></a></p>
-<p><img src="https://user-images.githubusercontent.com/26461307/159371599-95b2acd5-e5eb-482c-9ead-d8f601f034b5.png" alt="comet-land-blog"></p>
-<h3 id="blog-demo"><a href="https://comet-land-blog.vercel.app/" target="_blank" rel="noopener noreferer">BLOG DEMO</a></h3>
-<p><img src="https://user-images.githubusercontent.com/26461307/160653172-c56a3b64-dfa9-4708-bf95-fca2fff47964.png" alt="comet-land-resume"></p>
-<h3 id="resume-demo"><a href="https://comet-land-resume.vercel.app/" target="_blank" rel="noopener noreferer">RESUME DEMO</a></h3>
-<p>Blog and Resume template with turborepo</p>
-<p>한국어 문서는 <a href="https://github.com/hyesungoh/hyesungoh-land/tree/main/_docs/ko-readme.md" target="_blank" rel="noopener noreferer">다음 링크</a>에서 확인하실 수 있습니다.</p>
-<h2 id="blog-feature" class="heading">Blog Feature</h2>
-<p><img src="https://user-images.githubusercontent.com/26461307/159372336-e42c1a9c-9915-4d05-9e51-4882d681dc80.gif" alt="postGif"></p>
-<ul>
-<li>👔 Code highlight with line-highlight, line-numbers</li>
-<li>🎨 Design with <a href="https://nextui.org/" target="_blank" rel="noopener noreferer">NextUI</a></li>
-<li>🍽 Table of contents</li>
-<li>🎩 Dark mode</li>
-</ul>
-<p><img src="https://user-images.githubusercontent.com/26461307/159372344-d628b817-d7f5-4322-813e-3468a62e79d6.gif" alt="kbarGif"></p>
-<ul>
-<li>⌨️ Search with <a href="https://kbar.vercel.app/" target="_blank" rel="noopener noreferer">KBar</a></li>
-<li>🔨 Configurable</li>
-<li>🔊 <a href="https://utteranc.es/" target="_blank" rel="noopener noreferer">Utterances</a> Comment</li>
-<li>🔭 Google Analytics</li>
-<li>🔥 Hotjar</li>
-<li>🏄 Lighthouse score</li>
-</ul>
-<p><img src="https://user-images.githubusercontent.com/26461307/161536154-b85caf9f-0f73-4224-a1e7-540723916ff7.gif" alt="blog lighthouse score"></p>
-<h2 id="resume-feature" class="heading">Resume Feature</h2>
-<ul>
-<li>🎨 Design with <a href="https://nextui.org/" target="_blank" rel="noopener noreferer">NextUI</a></li>
-<li>🎩 Dark mode</li>
-<li>⌨️ Contact with <a href="https://kbar.vercel.app/" target="_blank" rel="noopener noreferer">KBar</a></li>
-<li>🔨 Configurable</li>
-<li>🔭 Google Analytics</li>
-<li>🔥 Hotjar</li>
-<li>🏄 Lighthouse score</li>
-</ul>
-<p><img src="https://user-images.githubusercontent.com/26461307/161536162-63278484-ca52-42ed-89d4-951cd31e42c1.gif" alt="resume lighthouse score"></p>
-<h2 id="how-to-start" class="heading">How to start</h2>
-<p><code>comet-land</code> has own generate package <a href="https://github.com/hyesungoh/create-comet-land" target="_blank" rel="noopener noreferer"><code>create-comet-land</code></a></p>
-<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line">npx create-comet-land
-</span><span class="code-line"><span class="token comment"># or</span>
-</span><span class="code-line"><span class="token function">yarn</span> create comet-land
+      <![CDATA[<h2 id="문제" class="heading">문제</h2>
+<p><a href="https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/567/" target="_blank" rel="noopener noreferer">(링크)</a></p>
+<h2 id="풀이" class="heading">풀이</h2>
+<h3 id="시행착오">시행착오</h3>
+<pre class="language-js"><code class="language-js code-highlight"><span class="code-line line-number" line="1"><span class="token keyword">const</span> <span class="token function-variable function">moveZeroes</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">nums</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token keyword">let</span> len <span class="token operator">=</span> nums<span class="token punctuation">.</span><span class="token property-access">length</span>
+</span><span class="code-line line-number" line="3">  <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> len<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="4">      <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="5">          nums<span class="token punctuation">.</span><span class="token method function property-access">splice</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="6">          nums<span class="token punctuation">.</span><span class="token method function property-access">push</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="7">          len<span class="token operator">--</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="8">      <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="9">  <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="10"><span class="token punctuation">}</span><span class="token punctuation">;</span>
 </span></code></pre>
 <blockquote>
-<p>Or using Fork or clone this repo</p>
+<p>케이스 [0,0,1] 일 때 [1,0,0]을 출력해야 하는데 [0,1,0]을 출력했다.<br>
+0이 연속으로 올 때 통과할 수 없는 코드였다.</p>
 </blockquote>
-<ol>
-<li>Install dependencies</li>
-</ol>
-<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token function">yarn</span>
+<h3 id="통과">통과</h3>
+<pre class="language-js"><code class="language-js code-highlight"><span class="code-line line-number" line="1"><span class="token keyword">const</span> <span class="token function-variable function">moveZeroes</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">nums</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token keyword">let</span> idxArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3">  <span class="token keyword">let</span> cnt <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="4">
+</span><span class="code-line line-number" line="5">  <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> nums<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="6">    <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="7">      idxArr<span class="token punctuation">.</span><span class="token method function property-access">push</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="8">      cnt<span class="token operator">++</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="9">    <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="10">  <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="11">
+</span><span class="code-line line-number" line="12">  <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> idxArr<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="13">    nums<span class="token punctuation">.</span><span class="token method function property-access">splice</span><span class="token punctuation">(</span>idxArr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> i<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="14">  <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="15">
+</span><span class="code-line line-number" line="16">  <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> cnt<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="17">    nums<span class="token punctuation">.</span><span class="token method function property-access">push</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="18">  <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="19"><span class="token punctuation">}</span><span class="token punctuation">;</span>
 </span></code></pre>
-<ol start="2">
-<li>Start Turbo !</li>
-</ol>
-<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token function">yarn</span> turbo run dev
-</span><span class="code-line"><span class="token comment"># or just</span>
-</span><span class="code-line"><span class="token function">yarn</span> dev
+<blockquote>
+<p>통과 목적으로 억지로 풀었지만 마음에 들지 않았다.<br>
+leetcode에서 투 포인터 알고리즘을 사용해보라는 힌트가 있길래<br>
+고민하다가 다른 풀이를 참고해보았다.</p>
+</blockquote>
+<h2 id="참고" class="heading">참고</h2>
+<p>O(N) time &#x26; O(1) space 풀이 1. <a href="https://youtu.be/vP8-eaIo3is" target="_blank" rel="noopener noreferer">(링크)</a></p>
+<pre class="language-js"><code class="language-js code-highlight"><span class="code-line line-number" line="1"><span class="token keyword">const</span> <span class="token function-variable function">moveZeroes</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">nums</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token keyword">let</span> index <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3">
+</span><span class="code-line line-number" line="4">  <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> nums<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="5">    <span class="token keyword">const</span> num <span class="token operator">=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="6">
+</span><span class="code-line line-number" line="7">    <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>num <span class="token operator">!==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="8">      nums<span class="token punctuation">[</span>index<span class="token punctuation">]</span> <span class="token operator">=</span> num<span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="9">      index<span class="token operator">++</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="10">    <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="11">  <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="12">
+</span><span class="code-line line-number" line="13">  <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> index<span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> nums<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="14">    nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="15">  <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="16"><span class="token punctuation">}</span>
 </span></code></pre>
-<ol start="4">
-<li>Now you can see blog at <code>localhost:3000</code>, resume at <code>localhost:3001</code></li>
-</ol>
-<h2 id="how-to-configuration" class="heading">How to configuration</h2>
-<p>Please see <code>packages/core/constants</code> directory.</p>
-<p>and you can reconfigure at that directory's variable</p>
-<ul>
-<li>Analytics directory
-<ul>
-<li>GA ID</li>
-<li>Hotjar ID</li>
-</ul>
-</li>
-<li>Colors directory
-<ul>
-<li>color schema</li>
-</ul>
-</li>
-<li>General directory
-<ul>
-<li>author image</li>
-<li>default open-graph image</li>
-<li>favicon</li>
-</ul>
-</li>
-<li>SocialMedia directory
-<ul>
-<li>github</li>
-<li>instagram</li>
-<li>facebook</li>
-<li>linkedin</li>
-<li>twitter</li>
-</ul>
-</li>
-</ul>
-<p>and please check <code>apps/blog/_config/index.json</code> and <code>apps/resume/_config/index.json</code>.</p>
-<p>This files are placing each app's configuration variable.</p>
-<h2 id="how-to-use-it" class="heading">How to use it</h2>
-<p>please read following link.</p>
-<ul>
-<li><a href="https://github.com/hyesungoh/hyesungoh-land/tree/main/_docs/en-blog.md" target="_blank" rel="noopener noreferer">how to add blog post</a></li>
-<li><a href="https://github.com/hyesungoh/hyesungoh-land/tree/main/_docs/en-resume.md" target="_blank" rel="noopener noreferer">how to custom resume</a></li>
-</ul>
-<h2 id="how-to-deploy-with-vercel" class="heading">How to deploy with vercel</h2>
-<h3 id="1-import-git-repository">1. Import git repository</h3>
-<p><img src="https://user-images.githubusercontent.com/26461307/177278351-7b82fcbe-e6db-46bd-93f4-10e8524ef2bf.gif" alt="deploy step 1"></p>
-<h3 id="2-select-framework-preset-to-nextjs">2. Select framework preset to <code>Next.js</code></h3>
-<p><img src="https://user-images.githubusercontent.com/26461307/177278363-509b3d69-f692-4458-8bc2-62173eef5e7e.gif" alt="deploy step 2"></p>
-<h3 id="3-set-root-directory-to-appsblog-or-appsresume">3. Set root directory to <code>apps/blog</code> or <code>apps/resume</code></h3>
-<p><img src="https://user-images.githubusercontent.com/26461307/177278370-1651b4d7-e561-44df-8a62-a283450773d9.gif" alt="deploy step 3"></p>
-<h3 id="4-set-build-command">4. Set build command</h3>
-<p><img src="https://user-images.githubusercontent.com/26461307/177278380-659ba348-7952-4875-9e19-0a006ad57c1a.gif" alt="deploy step 4"></p>
-<ul>
-<li>blog build command</li>
-</ul>
-<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>/<span class="token punctuation">..</span> <span class="token operator">&#x26;&#x26;</span> npx turbo run build --scope<span class="token operator">=</span>blog --include-dependencies --no-deps
+<blockquote>
+<p>0이 아닌 숫자를 만날 때마다 1씩 증가시킨 index부터 for문을 돌아서 0으로 바꿔준다.</p>
+</blockquote>
+<p>O(N) time &#x26; O(1) space 풀이 2. <a href="https://leetcode.com/problems/move-zeroes/solutions/72069/javascript-solution-beats-93-o-n-time-and-o-1-space/?languageTags=javascript" target="_blank" rel="noopener noreferer">(링크)</a></p>
+<pre class="language-js"><code class="language-js code-highlight"><span class="code-line line-number" line="1"><span class="token keyword">const</span> <span class="token function-variable function">moveZeroes</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">nums</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> nums<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="3">    <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">!==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="4">      <span class="token keyword">const</span> temp <span class="token operator">=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+</span><span class="code-line line-number" line="5">      nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span>
+</span><span class="code-line line-number" line="6">      nums<span class="token punctuation">[</span>j<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> temp
+</span><span class="code-line line-number" line="7">    <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="8">  <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="9"><span class="token punctuation">}</span>
 </span></code></pre>
-<ul>
-<li>resume build command</li>
-</ul>
-<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>/<span class="token punctuation">..</span> <span class="token operator">&#x26;&#x26;</span> npx turbo run build --scope<span class="token operator">=</span>resume --include-dependencies --no-deps
-</span></code></pre>
-<h3 id="5-click-the-deploy-button-">5. Click the Deploy button! 🎉</h3>
-<p><img src="https://user-images.githubusercontent.com/26461307/177278617-82982395-d1fc-46f1-8f96-f7cb7bae95d9.png" alt="click the deploy button"></p>
-<h3 id="more-information">More information</h3>
-<p>This project using <code>turborepo</code>.</p>
-<p>so, you can find more information at this <a href="https://vercel.com/docs/concepts/monorepos/turborepo" target="_blank" rel="noopener noreferer">vercel guide</a>.</p>
-<h2 id="how-to-add-more-packages" class="heading">How to add more packages</h2>
-<ul>
-<li>scope packages</li>
-</ul>
-<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token builtin class-name">cd</span> where-you-want
-</span><span class="code-line"><span class="token function">yarn</span> <span class="token function">add</span> package-name
-</span></code></pre>
-<ul>
-<li>global packages</li>
-</ul>
-<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token function">yarn</span> <span class="token function">add</span> package-name -W
-</span></code></pre>
-<ul>
-<li>global dev packages</li>
-</ul>
-<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token function">yarn</span> <span class="token function">add</span> package-name -DW
-</span></code></pre>
-<h2 id="trouble-shootings" class="heading">Trouble shootings</h2>
-<p>check <a href="https://github.com/hyesungoh/comet-land/wiki/Trouble-Shooting" target="_blank" rel="noopener noreferer">this wiki</a> please! it might be help</p>
-<h2 id="use-case" class="heading">Use Case</h2>
-<ul>
-<li><a href="https://github.com/hyesungoh/hyesungoh.xyz" target="_blank" rel="noopener noreferer">hyesungoh.xyz</a></li>
-</ul>
-<h2 id="inspired" class="heading">Inspired</h2>
-<p>I inspired below blogs and resume.</p>
-<ul>
-<li><a href="https://overreacted.io/" target="_blank" rel="noopener noreferer">Overreacted</a></li>
-<li><a href="https://yceffort.kr/" target="_blank" rel="noopener noreferer">Yceffort</a></li>
-<li><a href="https://gatsby-starter-bee.netlify.app/" target="_blank" rel="noopener noreferer">gatsby-starter-bee</a></li>
-<li><a href="https://vallista.kr/" target="_blank" rel="noopener noreferer">vallista-land</a></li>
-<li><a href="https://hyunseob.github.io/resume/" target="_blank" rel="noopener noreferer">hyunseob.github.io/resume</a></li>
-</ul>
-<h2 id="license" class="heading">License</h2>
-<p>MIT</p>]]>
+<blockquote>
+<p>for문 안에서 i, j 변수 두 개를 만들고, 0이 아닌 숫자일 경우 해당 숫자(temp)와 0의 위치(j)를 바꿔준다.<br>
+j는 0이 아닌 경우에만 1씩 증가해서 가장 앞에 있는 0의 인덱스를 기억한다.</p>
+</blockquote>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[Keep Going, Keep Swimming]]></title>
+    <link>https://ddoolog.vercel.app/221101</link>
+    <pubDate>2022-11-01</pubDate>
+    <guid isPermaLink="false">https://ddoolog.vercel.app/221101</guid>
+    <description>
+    <![CDATA[블로그를 통해 얻고 싶은 것]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="1년-회고--블로그-이주기" class="heading">1년 회고 &#x26; 블로그 이주기</h2>
+<p><strong>퇴사 후 개발 공부를 시작한 지 만 1년이 지났다.</strong></p>
+<p>TIL 이란 개념을 접하고 멋쟁이사자처럼 프론트엔드스쿨을 시작하면서 매일의 공부 기록을 남기고자 시도했던 첫 블로그는 velog였다. 마크다운에 익숙해지는 잠깐의 시기가 지나고 나니 글을 쓰기 편리해서 좋았다. 개발을 본격적으로 공부하기 시작하고 접하는 모든 게 재밌어서 하루 동안 배우고 겪은 모든 것들을 글 하나에 꼼꼼하게 모아서 올렸었다. 같은 과정을 듣는 분들이 내가 정리한 걸 보며 복습하기 좋다고 말씀해 주시기도 해서 잠을 줄여가며 3~4주 동안 의욕적으로 했던 것 같다.</p>
+<p>하지만 공개적인 곳에 하루하루 글 쓰는 것에 부담을 느끼기 시작했다. 무엇보다도 스스로에게 자신이 없었다. 9시부터 6시까지 수업을 듣고 나름대로는 자기 전까지 남은 시간을 꼬박 투자해 궁금한 내용과 부족한 부분을 보완해서 글을 썼다곤 하지만, 깊이가 얕았고 옳은 정보인지에 대한 판단을 스스로 할 수 없었다. 그리고 결정적으로 자바스크립트를 처음 접하게 되면서 9 to 6로 진행되는 진도의 양을 따라가는 것만으로도 너무 벅찼다.</p>
+<p>글 하나를 잘 쓰는 것에 몇 시간을 투자해야 했는데, 공부가 어려워지고 이해가 부족하다 보니 자연스럽게 블로그와는 멀어지게 되었다. 대신 노션을 활용하기 시작했다. 나만 볼 수 있고, 글의 형식을 신경 쓰지 않고 오롯이 공부를 위한 목적으로만 활용할 수 있어 좋았다. 하지만 신입 개발자가 되려면 실력도 물론 중요하지만 블로그로 꾸준함, 성실성을 증명할 수 있어야 한다는 생각이 떠나질 않았다. 역량의 부족을 절실히 느꼈다.</p>
+<p>멋사 FE스쿨 12주 과정이 끝나고 스터디와 프로젝트를 하면서 계속 노션을 활용하다가, 또 좋은 기회로 항해 99 X 동북권 ICT 14주 과정에 참여하게 되었다. 여기서는 매주 WIL을 쓰는 것을 권장하고 있었다. 이제는 자바스크립트와 리액트로 프로젝트도 해봤고, 글 쓸 거리가 있지 않을까, 좀 더 잘 쓸 수 있지 않을까 싶어서 다시 블로그를 해야겠다고 결심했다. 그래서 선택한 플랫폼은 티스토리였다. 구글링을 하면서 티스토리 블로그를 많이 접하기도 했고, 마음에 들게 커스터마이징 하고 나니 의욕이 생겼다.</p>
+<h2 id="깃허브-블로그를-사용하는-목적" class="heading">깃허브 블로그를 사용하는 목적</h2>
+<p><strong>하지만 여전히 글쓰기는 부담스럽고 어려웠다.</strong></p>
+<p>이건 내 문제였다. 블로그가 예쁘고말고를 떠나서 본질적으로 좋은 글로 채워진 블로그를 만들고 싶었지만, 괜찮은 글 하나를 쓰는 것에 대한 부담은 전보다 심하면 심해졌지 못하진 않았다. 티스토리 이용도 생각보다 불편했는데, 코드 편집기와 HTML 편집기를 왔다 갔다 하면서 글 자체에 집중하지 못하는 경험을 했다.</p>
+<p>또 99일 과정 동안 해야 될 게 많은 바쁜 일정 속에서도 새로 알게 된 지식들을 부지런히 본인의 견해로 쓰시는 분을 알게 되었다. 그래서 개발 블로그에 대한 고민을 한번 털어놓았는데, 부담 갖지 않고 자신만의 지식 창고를 만든다는 느낌으로 글을 쓴다고 하셨다. 어차피 잘 쓰려고 해도 경험이 부족하면 잘 쓸 수가 없다는 것이 요지였다. 그 말에 깨닫는 것이 있어서 공감을 했는데, 그분이 쓰신 글은 내가 보기엔 시간 투자 대비 완성도도 높았다. 내가 쓰고 싶은 글의 방향이었다.</p>
+<p>그래서 내린 결론은 개발 내공, 글 쓰는 내공을 쌓아야겠다는 것이었다. 결국 잘 쓰는 것에 대한 부담이 최대 문제였기 때문에, 공부 목적과 꾸준함이라는 목표를 가지고 TIL을 일기처럼 쓰는 습관을 들이고 싶었다. 그러기 위해 깃허브 블로그가 좋겠다는 생각이 들었다. 일단 노션보단 오픈되어 있고, 검색에 노출되지 않으면서 매일 해야 하는 적당한 동기부여가 될 것 같았다. 글 내용을 짧게 쓰더라도 지치지 않고 자유롭게 공부 기록을 남겨보려고 한다.</p>
+<h2 id="꾸준히-앞으로-나아가기" class="heading">꾸준히 앞으로 나아가기</h2>
+<p><strong>개발에 대한 열정을 계속 더 키워나가고 싶다.</strong></p>
+<p>퇴사했을 때의 결심을 잊지 않고, 좋아하는 개발 일을 할 수 있는 개발자가 되기 위해 계속 실력을 쌓아가고 싶다. 블로그에 TIL을 쓰는 작업이 그 밑거름이 되었으면 좋겠다. 이게 익숙해지다 보면 언젠가 <a href="https://jbee.io/essay/writing-of-developers/" target="_blank" rel="noopener noreferer">개발자의 글쓰기, 기술 블로그에 대하여</a> 글에서 말하는 집, 편, 술, 저의 과정을 거치며 단순히 강의 요약이나 짜깁기한 글이 아닌 나만의 언어로 글을 쓸 수 있는 능력을 갖출 수 있을 것 같다. 지치지 말고 하루하루 나아가자!</p>]]>
     </content:encoded>
   </item><item>
     <title><![CDATA[Markdown Examples]]></title>
-    <link>https://comet-land-blog.vercel.app/markdown</link>
+    <link>https://ddoolog.vercel.app/markdown</link>
     <pubDate>2022-03-01</pubDate>
-    <guid isPermaLink="false">https://comet-land-blog.vercel.app/markdown</guid>
+    <guid isPermaLink="false">https://ddoolog.vercel.app/markdown</guid>
     <description>
     <![CDATA[example for writing markdown]]>
     </description>
@@ -335,59 +283,6 @@
 </li>
 </ol>
 </section>]]>
-    </content:encoded>
-  </item><item>
-    <title><![CDATA[Support KBar]]></title>
-    <link>https://comet-land-blog.vercel.app/kbar-support</link>
-    <pubDate>2022-02-28</pubDate>
-    <guid isPermaLink="false">https://comet-land-blog.vercel.app/kbar-support</guid>
-    <description>
-    <![CDATA[please press CMD + K!]]>
-    </description>
-    <content:encoded>
-      <![CDATA[<p><strong>Comet-land</strong> support <a href="https://kbar.vercel.app/" target="_blank" rel="noopener noreferer">Kbar</a></p>
-<ul>
-<li>for searching post,</li>
-<li>visiting specific category,</li>
-<li>link to social media</li>
-</ul>
-<h2 id="hot-to-use-it" class="heading">hot to use it</h2>
-<p>just press <code>CMD + k</code></p>
-<blockquote>
-<p>window is <code>Cntl + K</code></p>
-</blockquote>]]>
-    </content:encoded>
-  </item><item>
-    <title><![CDATA[Foo]]></title>
-    <link>https://comet-land-blog.vercel.app/foo</link>
-    <pubDate>2022-01-01</pubDate>
-    <guid isPermaLink="false">https://comet-land-blog.vercel.app/foo</guid>
-    <description>
-    <![CDATA[foo foo foo]]>
-    </description>
-    <content:encoded>
-      <![CDATA[<h2 id="foo" class="heading">foo</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam deserunt est doloremque nulla iure fugiat earum similique assumenda, eius eum, magni impedit non asperiores ex ut, alias necessitatibus quae commodi quod aspernatur deleniti consectetur obcaecati. Laboriosam esse minima quia, ratione iusto pariatur libero itaque totam non temporibus doloribus dignissimos porro cupiditate quo tempore neque iure dolores illum magnam? Cum nostrum facere voluptatem accusamus aliquam doloribus odio provident, tempore, assumenda praesentium maxime quae architecto inventore tenetur nam tempora enim minus modi sequi? Fuga quidem fugit totam ex earum! Distinctio nulla tempore perspiciatis aut quasi non dolorum laborum ipsum, exercitationem mollitia.</p>
-<h2 id="foofoo" class="heading">foofoo</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam deserunt est doloremque nulla iure fugiat earum similique assumenda, eius eum, magni impedit non asperiores ex ut, alias necessitatibus quae commodi quod aspernatur deleniti consectetur obcaecati. Laboriosam esse minima quia, ratione iusto pariatur libero itaque totam non temporibus doloribus dignissimos porro cupiditate quo tempore neque iure dolores illum magnam? Cum nostrum facere voluptatem accusamus aliquam doloribus odio provident, tempore, assumenda praesentium maxime quae architecto inventore tenetur nam tempora enim minus modi sequi? Fuga quidem fugit totam ex earum! Distinctio nulla tempore perspiciatis aut quasi non dolorum laborum ipsum, exercitationem mollitia.</p>
-<h2 id="foofoofoo" class="heading">foofoofoo</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam deserunt est doloremque nulla iure fugiat earum similique assumenda, eius eum, magni impedit non asperiores ex ut, alias necessitatibus quae commodi quod aspernatur deleniti consectetur obcaecati. Laboriosam esse minima quia, ratione iusto pariatur libero itaque totam non temporibus doloribus dignissimos porro cupiditate quo tempore neque iure dolores illum magnam? Cum nostrum facere voluptatem accusamus aliquam doloribus odio provident, tempore, assumenda praesentium maxime quae architecto inventore tenetur nam tempora enim minus modi sequi? Fuga quidem fugit totam ex earum! Distinctio nulla tempore perspiciatis aut quasi non dolorum laborum ipsum, exercitationem mollitia.</p>]]>
-    </content:encoded>
-  </item><item>
-    <title><![CDATA[Bar]]></title>
-    <link>https://comet-land-blog.vercel.app/bar</link>
-    <pubDate>2021-12-01</pubDate>
-    <guid isPermaLink="false">https://comet-land-blog.vercel.app/bar</guid>
-    <description>
-    <![CDATA[bar bar bar]]>
-    </description>
-    <content:encoded>
-      <![CDATA[<h2 id="bar" class="heading">bar</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam deserunt est doloremque nulla iure fugiat earum similique assumenda, eius eum, magni impedit non asperiores ex ut, alias necessitatibus quae commodi quod aspernatur deleniti consectetur obcaecati. Laboriosam esse minima quia, ratione iusto pariatur libero itaque totam non temporibus doloribus dignissimos porro cupiditate quo tempore neque iure dolores illum magnam? Cum nostrum facere voluptatem accusamus aliquam doloribus odio provident, tempore, assumenda praesentium maxime quae architecto inventore tenetur nam tempora enim minus modi sequi? Fuga quidem fugit totam ex earum! Distinctio nulla tempore perspiciatis aut quasi non dolorum laborum ipsum, exercitationem mollitia.</p>
-<h2 id="barbar" class="heading">barbar</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam deserunt est doloremque nulla iure fugiat earum similique assumenda, eius eum, magni impedit non asperiores ex ut, alias necessitatibus quae commodi quod aspernatur deleniti consectetur obcaecati. Laboriosam esse minima quia, ratione iusto pariatur libero itaque totam non temporibus doloribus dignissimos porro cupiditate quo tempore neque iure dolores illum magnam? Cum nostrum facere voluptatem accusamus aliquam doloribus odio provident, tempore, assumenda praesentium maxime quae architecto inventore tenetur nam tempora enim minus modi sequi? Fuga quidem fugit totam ex earum! Distinctio nulla tempore perspiciatis aut quasi non dolorum laborum ipsum, exercitationem mollitia.</p>
-<h2 id="barbarbar" class="heading">barbarbar</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam deserunt est doloremque nulla iure fugiat earum similique assumenda, eius eum, magni impedit non asperiores ex ut, alias necessitatibus quae commodi quod aspernatur deleniti consectetur obcaecati. Laboriosam esse minima quia, ratione iusto pariatur libero itaque totam non temporibus doloribus dignissimos porro cupiditate quo tempore neque iure dolores illum magnam? Cum nostrum facere voluptatem accusamus aliquam doloribus odio provident, tempore, assumenda praesentium maxime quae architecto inventore tenetur nam tempora enim minus modi sequi? Fuga quidem fugit totam ex earum! Distinctio nulla tempore perspiciatis aut quasi non dolorum laborum ipsum, exercitationem mollitia.</p>]]>
     </content:encoded>
   </item>
     </channel>

@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://comet-land-blog.vercel.app/sitemap.xml
+Sitemap: https://ddoolog.vercel.app/sitemap.xml

@@ -1,32 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://comet-land-blog.vercel.app</loc>
+    <loc>https://ddoolog.vercel.app</loc>
   </url>
 
   <url>
-    <loc>https://comet-land-blog.vercel.app/bar</loc>
+    <loc>https://ddoolog.vercel.app/221102</loc>
   </url>
   <url>
-    <loc>https://comet-land-blog.vercel.app/foo</loc>
+    <loc>https://ddoolog.vercel.app/markdown</loc>
   </url>
   <url>
-    <loc>https://comet-land-blog.vercel.app/how-to-start</loc>
-  </url>
-  <url>
-    <loc>https://comet-land-blog.vercel.app/kbar-support</loc>
-  </url>
-  <url>
-    <loc>https://comet-land-blog.vercel.app/markdown</loc>
+    <loc>https://ddoolog.vercel.app/221101</loc>
   </url>
 
   <url>
-    <loc>https://comet-land-blog.vercel.app/category/Bar</loc>
+    <loc>https://ddoolog.vercel.app/category/Algorithm</loc>
   </url>
   <url>
-    <loc>https://comet-land-blog.vercel.app/category/Foo</loc>
+    <loc>https://ddoolog.vercel.app/category/Guide</loc>
   </url>
   <url>
-    <loc>https://comet-land-blog.vercel.app/category/Guide</loc>
+    <loc>https://ddoolog.vercel.app/category/TIL</loc>
   </url>
 </urlset>

@@ -12,9 +12,166 @@
           <![CDATA[Keep Dev Swimming 🌊🏊️  ]]>
         </description>
         <language>en</language>
-        <lastBuildDate>2022-11-02</lastBuildDate>
+        <lastBuildDate>2022-11-04</lastBuildDate>
         <item>
-    <title><![CDATA[leetcode | Move Zeroes]]></title>
+    <title><![CDATA[LeetCode | Two Sum]]></title>
+    <link>https://ddoolog.vercel.app/221104</link>
+    <pubDate>2022-11-04</pubDate>
+    <guid isPermaLink="false">https://ddoolog.vercel.app/221104</guid>
+    <description>
+    <![CDATA[Top Interview Questions - Array]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<h2 id="문제" class="heading">문제</h2>
+<p><a href="https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/546/" target="_blank" rel="noopener noreferer">(링크)</a></p>
+<h2 id="풀이" class="heading">풀이</h2>
+<pre class="language-js"><code class="language-js code-highlight"><span class="code-line line-number" line="1"><span class="token keyword">const</span> <span class="token function-variable function">twoSum</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">nums<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token keyword">let</span> answer<span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3">  <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> nums<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="4">    <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&#x3C;</span> nums<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="5">      <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">===</span> target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="6">        answer <span class="token operator">=</span> <span class="token punctuation">[</span>i<span class="token punctuation">,</span> j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="7">        <span class="token keyword control-flow">break</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="8">      <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="9">    <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="10">  <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="11">  <span class="token keyword control-flow">return</span> answer<span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="12"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></code></pre>
+<blockquote>
+<p><strong>Follow-up: Can you come up with an algorithm that is less than O(n^2) time complexity?</strong><br>
+이중 for문을 써서 O(N^2)시간이 걸리는 가장 간단한 방법으로 풀었다. 통과는 했지만 효율적으로 구현하기 위해 다른 풀이를 참고해서 해시 맵을 이용하라고 한다.
+해시 맵을 이용하면 삽입, 검색에 걸리는 시간 복잡도가 O(1)이므로, 전체 시간 복잡도를 O(N)으로 줄일 수 있다. 하지만 별도의 메모리 공간을 할당하기 때문에 공간 복잡도는 이중 for문 풀이 O(1)에서 O(N)으로 선형적(linear)으로 증가하게 된다.</p>
+</blockquote>
+<h2 id="참고" class="heading">참고</h2>
+<p><a href="https://youtu.be/NLhkpg9p7VQ" target="_blank" rel="noopener noreferer">(링크)</a></p>
+<pre class="language-js"><code class="language-js code-highlight"><span class="code-line line-number" line="1"><span class="token keyword">const</span> <span class="token function-variable function">twoSum</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">nums<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token keyword">let</span> map <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3">  <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> nums<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="4">    <span class="token keyword">let</span> value <span class="token operator">=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="5">    <span class="token keyword">let</span> complementPair <span class="token operator">=</span> target <span class="token operator">-</span> value<span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="6">
+</span><span class="code-line line-number" line="7">    <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>map<span class="token punctuation">[</span>complementPair<span class="token punctuation">]</span> <span class="token operator">!==</span> <span class="token keyword nil">undefined</span><span class="token punctuation">)</span> <span class="token keyword control-flow">return</span> <span class="token punctuation">[</span>map<span class="token punctuation">[</span>complementPair<span class="token punctuation">]</span><span class="token punctuation">,</span> i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="8">    <span class="token keyword control-flow">else</span> map<span class="token punctuation">[</span>value<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="9">  <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="10"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></code></pre>
+<h3 id="object-대신-map-사용하기">Object 대신 Map 사용하기</h3>
+<pre class="language-js"><code class="language-js code-highlight"><span class="code-line line-number" line="1"><span class="token keyword">const</span> <span class="token function-variable function">twoSum</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">nums<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3">  <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> nums<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="4">    <span class="token keyword">let</span> value <span class="token operator">=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="5">    <span class="token keyword">let</span> complementPair <span class="token operator">=</span> target <span class="token operator">-</span> value<span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="6">
+</span><span class="code-line line-number highlight-line" line="7">    <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>map<span class="token punctuation">.</span><span class="token method function property-access">get</span><span class="token punctuation">(</span>complementPair<span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token keyword nil">undefined</span><span class="token punctuation">)</span> <span class="token keyword control-flow">return</span> <span class="token punctuation">[</span>map<span class="token punctuation">.</span><span class="token method function property-access">get</span><span class="token punctuation">(</span>complementPair<span class="token punctuation">)</span><span class="token punctuation">,</span> i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number highlight-line" line="8">    <span class="token keyword control-flow">else</span> map<span class="token punctuation">.</span><span class="token method function property-access">set</span><span class="token punctuation">(</span>value<span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="9">  <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="10"><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></code></pre>
+<blockquote>
+<p>자바스크립트에서는 Object를 해시 맵처럼 쓰지말라는 글을 읽어서 이러한 용도로 쓰기 위해 제공되는 <code>Map</code>을 사용해보았다.<br>
+객체는 key를 문자형으로 변환하지만, <code>Map</code>은 key의 타입을 변환시키지 않고 그대로 유지한다고 한다. 즉 자료형의 제약이 없다. 또한 맵은 설계 단계부터 데이터 추가, 삭제에 있어서 최적화되어 있기 때문에 단순히 객체를 이용할 때보다 성능 상 이점이 있다.
+<code>map[key]</code>는 Map을 쓰는 올바른 방법이 아니다. map을 일반 객체처럼 취급하게 되기 때문인데, 따라서 <code>map</code> 전용 메서드인 <code>get</code>과 <code>set</code> 등을 사용해야 한다.</p>
+</blockquote>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[Programmers | 분수의 덧셈, 최대공약수와 최소공배수, N개의 최소공배수]]></title>
+    <link>https://ddoolog.vercel.app/221103</link>
+    <pubDate>2022-11-03</pubDate>
+    <guid isPermaLink="false">https://ddoolog.vercel.app/221103</guid>
+    <description>
+    <![CDATA[유클리드 호제법, GCD/LCM 관련 3문제 풀이 (Lv 0, 1, 2)]]>
+    </description>
+    <content:encoded>
+      <![CDATA[<ul>
+<li><strong>GCD</strong>(<em>Greatest common divisor</em>): 최대공약수</li>
+<li><strong>LCM</strong>(<em>Least common multiple</em>): 최소공배수</li>
+<li>두 수의 곱은 GCD와 LCM의 곱과 같다.</li>
+</ul>
+<blockquote>
+<p>프로그래머스 0단계 문제들을 구경하다가 분수의 덧셈 문제를 보고 쉽게 풀이가 떠오르지 않아서 당황했다. 최대공약수를 구하는 함수를 만들기 위해 <a href="https://ko.wikipedia.org/wiki/%EC%9C%A0%ED%81%B4%EB%A6%AC%EB%93%9C_%ED%98%B8%EC%A0%9C%EB%B2%95" target="_blank" rel="noopener noreferer">유클리드 호제법</a>을 다시 공부했는데, 예전에 풀었을 때보다 더 간단한 코드를 보고 1단계 문제 복습과 2단계 문제 풀이에 도전했다.</p>
+</blockquote>
+<h2 id="분수의-덧셈-lv0" class="heading">분수의 덧셈 (Lv.0)</h2>
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/120808" target="_blank" rel="noopener noreferer">(문제)</a></p>
+<pre class="language-js"><code class="language-js code-highlight"><span class="code-line line-number" line="1"><span class="token keyword">function</span> <span class="token function">solution</span><span class="token punctuation">(</span><span class="token parameter">denum1<span class="token punctuation">,</span> num1<span class="token punctuation">,</span> denum2<span class="token punctuation">,</span> num2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token keyword">let</span> denum <span class="token operator">=</span> denum1 <span class="token operator">*</span> num2 <span class="token operator">+</span> denum2 <span class="token operator">*</span> num1<span class="token punctuation">;</span> <span class="token comment">// 분자</span>
+</span><span class="code-line line-number" line="3">  <span class="token keyword">let</span> num <span class="token operator">=</span> num1 <span class="token operator">*</span> num2<span class="token punctuation">;</span> <span class="token comment">// 분모</span>
+</span><span class="code-line line-number" line="4">
+</span><span class="code-line line-number highlight-line" line="5">  <span class="token keyword">const</span> <span class="token function-variable function">getGCD</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">(</span>b <span class="token operator">===</span> <span class="token number">0</span> <span class="token operator">?</span> a <span class="token operator">:</span> <span class="token function">getGCD</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span> a <span class="token operator">%</span> b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="6">  <span class="token keyword">const</span> gcd <span class="token operator">=</span> <span class="token function">getGCD</span><span class="token punctuation">(</span>denum<span class="token punctuation">,</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="7">
+</span><span class="code-line line-number" line="8">  <span class="token keyword control-flow">return</span> <span class="token punctuation">[</span>denum <span class="token operator">/</span> gcd<span class="token punctuation">,</span> num <span class="token operator">/</span> gcd<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="9"><span class="token punctuation">}</span>
+</span></code></pre>
+<blockquote>
+<p><code>getGCD</code> 함수에서 두 수를 받아 나머지(더 작은 수, <code>b</code>)가 0이 될 때 최대공약수인 a를 리턴하고, 0이 아니라면 다시 재귀적으로 getGCD를 호출한다.<br>
+최종적으로 기약분수를 만들기 위해 각 <code>denum</code>과 <code>num</code>에 구해둔 최대공약수 <code>gcd</code>를 나누면 된다.</p>
+</blockquote>
+<br>
+<h2 id="최대공약수와-최소공배수-lv1" class="heading">최대공약수와 최소공배수 (Lv.1)</h2>
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/12940" target="_blank" rel="noopener noreferer">(문제)</a></p>
+<h3 id="예전-풀이">예전 풀이</h3>
+<pre class="language-js"><code class="language-js code-highlight"><span class="code-line line-number" line="1"><span class="token keyword">function</span> <span class="token function">solution</span><span class="token punctuation">(</span><span class="token parameter">n<span class="token punctuation">,</span> m</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token keyword">const</span> answer <span class="token operator">=</span> <span class="token punctuation">[</span>n<span class="token punctuation">,</span> m<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3">  answer<span class="token punctuation">.</span><span class="token method function property-access">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> a <span class="token operator">-</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="4">  <span class="token keyword">let</span> <span class="token punctuation">[</span>num1<span class="token punctuation">,</span> num2<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>n<span class="token punctuation">,</span> m<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="5">  <span class="token keyword">let</span> r <span class="token operator">=</span> num2 <span class="token operator">%</span> num1<span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="6">
+</span><span class="code-line line-number" line="7">  <span class="token keyword">const</span> <span class="token function-variable function">getAnswer</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number highlight-line" line="8">    <span class="token keyword control-flow">while</span> <span class="token punctuation">(</span>r <span class="token operator">!==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number highlight-line" line="9">      num2 <span class="token operator">=</span> num1<span class="token punctuation">;</span>
+</span><span class="code-line line-number highlight-line" line="10">      num1 <span class="token operator">=</span> r<span class="token punctuation">;</span>
+</span><span class="code-line line-number highlight-line" line="11">      r <span class="token operator">=</span> num2 <span class="token operator">%</span> num1<span class="token punctuation">;</span>
+</span><span class="code-line line-number highlight-line" line="12">    <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="13">    <span class="token keyword control-flow">return</span> <span class="token punctuation">[</span>num1<span class="token punctuation">,</span> <span class="token punctuation">(</span>n <span class="token operator">*</span> m<span class="token punctuation">)</span> <span class="token operator">/</span> num1<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="14">    <span class="token comment">// n * m === GCD(num1) * LCM 이므로</span>
+</span><span class="code-line line-number" line="15">  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="16">
+</span><span class="code-line line-number" line="17">  <span class="token keyword control-flow">return</span> r <span class="token operator">?</span> <span class="token function">getAnswer</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">:</span> answer<span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="18"><span class="token punctuation">}</span>
+</span></code></pre>
+<blockquote>
+<p>이때는 큰 수<code>num2</code>에서 작은 수<code>num1</code>를 나눈 나머지(<code>r</code>emainder)를 구하기 위해 오름차순 정렬도 해주었는데, 정렬을 안해도 상관없다.<br>
+왜냐하면 작은 수를 큰 수로 나는 나머지는 작은 수 그대로기 때문에 <code>num1</code>과 <code>num2</code>의 자리가 바뀌게 되어 의도대로 동작하게 된다.<br>
+분수의 덧셈 풀이에서 활용한 <code>getGCD</code> 함수를 써서 코드를 아래처럼 줄일 수 있었다.</p>
+</blockquote>
+<h3 id="풀이-개선">풀이 개선</h3>
+<pre class="language-js"><code class="language-js code-highlight"><span class="code-line line-number" line="1"><span class="token keyword">function</span> <span class="token function">solution</span><span class="token punctuation">(</span><span class="token parameter">n<span class="token punctuation">,</span> m</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number highlight-line" line="2">  <span class="token keyword">const</span> <span class="token function-variable function">getGCD</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">(</span>b <span class="token operator">===</span> <span class="token number">0</span> <span class="token operator">?</span> a <span class="token operator">:</span> <span class="token function">getGCD</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span> a <span class="token operator">%</span> b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3">  <span class="token keyword">const</span> gcd <span class="token operator">=</span> <span class="token function">getGCD</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span> m<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="4">  <span class="token keyword control-flow">return</span> <span class="token punctuation">[</span>gcd<span class="token punctuation">,</span> <span class="token punctuation">(</span>n <span class="token operator">*</span> m<span class="token punctuation">)</span> <span class="token operator">/</span> gcd<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="5"><span class="token punctuation">}</span>
+</span></code></pre>
+<br>
+<h2 id="n개의-최소공배수-lv2" class="heading">N개의 최소공배수 (Lv.2)</h2>
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/12953" target="_blank" rel="noopener noreferer">(문제)</a></p>
+<h3 id="시행착오">시행착오</h3>
+<pre class="language-js"><code class="language-js code-highlight"><span class="code-line line-number" line="1"><span class="token keyword">function</span> <span class="token function">solution</span><span class="token punctuation">(</span><span class="token parameter">arr</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token keyword">let</span> answer <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3">  <span class="token keyword">let</span> gcd <span class="token operator">=</span> arr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number highlight-line" line="4">  <span class="token keyword">const</span> <span class="token function-variable function">getGCD</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">(</span>b <span class="token operator">===</span> <span class="token number">0</span> <span class="token operator">?</span> a <span class="token operator">:</span> <span class="token function">getGCD</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span> a <span class="token operator">%</span> b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="5">
+</span><span class="code-line line-number" line="6">  <span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&#x3C;</span> arr<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="7">    gcd <span class="token operator">=</span> <span class="token function">getGCD</span><span class="token punctuation">(</span>gcd<span class="token punctuation">,</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="8">  <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="9">
+</span><span class="code-line line-number" line="10">  arr<span class="token punctuation">.</span><span class="token method function property-access">forEach</span><span class="token punctuation">(</span><span class="token parameter">v</span> <span class="token arrow operator">=></span> <span class="token punctuation">(</span>answer <span class="token operator">*=</span> v <span class="token operator">/</span> gcd<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="11">  <span class="token keyword control-flow">return</span> answer <span class="token operator">*</span> gcd<span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="12"><span class="token punctuation">}</span>
+</span></code></pre>
+<blockquote>
+<p>위 코드로 테스트케이스만 통과했다. 문제 이해도가 낮아 N개 수들의 최대공약수를 구해두고 활용하려고 했었다.<br>
+<code>reduce</code>를 사용해서 그때그때 두 수의 최대공약수를 나누어줌으로써 모든 수들의 최소공배수를 구했다.</p>
+</blockquote>
+<h3 id="통과">통과</h3>
+<pre class="language-js"><code class="language-js code-highlight"><span class="code-line line-number" line="1"><span class="token keyword">function</span> <span class="token function">solution</span><span class="token punctuation">(</span><span class="token parameter">arr</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number highlight-line" line="2">  <span class="token keyword">const</span> <span class="token function-variable function">getGCD</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">(</span>b <span class="token operator">===</span> <span class="token number">0</span> <span class="token operator">?</span> a <span class="token operator">:</span> <span class="token function">getGCD</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span> a <span class="token operator">%</span> b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number highlight-line" line="3">  <span class="token keyword control-flow">return</span> arr<span class="token punctuation">.</span><span class="token method function property-access">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">acc<span class="token punctuation">,</span> cur</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> acc <span class="token operator">*</span> <span class="token punctuation">(</span>cur <span class="token operator">/</span> <span class="token function">getGCD</span><span class="token punctuation">(</span>acc<span class="token punctuation">,</span> cur<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="4"><span class="token punctuation">}</span>
+</span></code></pre>]]>
+    </content:encoded>
+  </item><item>
+    <title><![CDATA[LeetCode | Move Zeroes]]></title>
     <link>https://ddoolog.vercel.app/221102</link>
     <pubDate>2022-11-02</pubDate>
     <guid isPermaLink="false">https://ddoolog.vercel.app/221102</guid>
@@ -128,161 +285,6 @@ j는 0이 아닌 경우에만 1씩 증가해서 가장 앞에 있는 0의 인덱
 <h2 id="꾸준히-앞으로-나아가기" class="heading">꾸준히 앞으로 나아가기</h2>
 <p><strong>개발에 대한 열정을 계속 더 키워나가고 싶다.</strong></p>
 <p>퇴사했을 때의 결심을 잊지 않고, 좋아하는 개발 일을 할 수 있는 개발자가 되기 위해 계속 실력을 쌓아가고 싶다. 블로그에 TIL을 쓰는 작업이 그 밑거름이 되었으면 좋겠다. 이게 익숙해지다 보면 언젠가 <a href="https://jbee.io/essay/writing-of-developers/" target="_blank" rel="noopener noreferer">개발자의 글쓰기, 기술 블로그에 대하여</a> 글에서 말하는 집, 편, 술, 저의 과정을 거치며 단순히 강의 요약이나 짜깁기한 글이 아닌 나만의 언어로 글을 쓸 수 있는 능력을 갖출 수 있을 것 같다. 지치지 말고 하루하루 나아가자!</p>]]>
-    </content:encoded>
-  </item><item>
-    <title><![CDATA[Markdown Examples]]></title>
-    <link>https://ddoolog.vercel.app/markdown</link>
-    <pubDate>2022-03-01</pubDate>
-    <guid isPermaLink="false">https://ddoolog.vercel.app/markdown</guid>
-    <description>
-    <![CDATA[example for writing markdown]]>
-    </description>
-    <content:encoded>
-      <![CDATA[<h2 id="h2-heading" class="heading">h2 heading</h2>
-<h3 id="h3-heading">h3 heading</h3>
-<h4 id="h4-heading">h4 heading</h4>
-<h5 id="h5-heading">h5 heading</h5>
-<h6 id="h6-heading">h6 heading</h6>
-<h2 id="emphasis" class="heading">Emphasis</h2>
-<p><strong>This is bold text</strong></p>
-<p><em>This is italic text</em></p>
-<p><del>this is delete</del></p>
-<h2 id="blockquotes" class="heading">Blockquotes</h2>
-<blockquote>
-<p>Develop. Preview. Ship. – Vercel</p>
-</blockquote>
-<h3 id="nested">nested</h3>
-<blockquote>
-<blockquote>
-<p>great power comes great responsibility</p>
-<p>— at spider man</p>
-</blockquote>
-<p>This is <strong>awesome</strong>.</p>
-<p>— hyesungoh</p>
-</blockquote>
-<h2 id="lists" class="heading">Lists</h2>
-<p>Unordered</p>
-<ul>
-<li>Lorem ipsum dolor.
-<ul>
-<li>foo
-<ul>
-<li>bar</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>sit amet consectetur adipisicing elit.</li>
-<li>Iure, delectus.</li>
-</ul>
-<p>Ordered</p>
-<ol>
-<li>Lorem ipsum dolor.
-<ol>
-<li>lorem
-<ol>
-<li>foo</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>sit amet consectetur adipisicing elit.</li>
-<li>Iure, delectus.</li>
-</ol>
-<h2 id="code" class="heading">Code</h2>
-<p>Inline <code>code</code></p>
-<pre class="language-js"><code class="language-js code-highlight"><span class="code-line"><span class="token keyword module">import</span> <span class="token imports">styled</span> <span class="token keyword module">from</span> <span class="token string">'@emotion/styled'</span><span class="token punctuation">;</span>
-</span><span class="code-line">
-</span><span class="code-line"><span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token keyword">function</span> <span class="token function"><span class="token maybe-class-name">Foo</span></span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> bar <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line">  <span class="token keyword control-flow">return</span> <span class="token punctuation">(</span>
-</span><span class="code-line">    <span class="token operator">&#x3C;</span>div<span class="token operator">></span>
-</span><span class="code-line">      <span class="token operator">&#x3C;</span><span class="token constant">H1</span><span class="token operator">></span><span class="token maybe-class-name">Comet</span><span class="token operator">-</span>land<span class="token operator">&#x3C;</span><span class="token operator">/</span><span class="token constant">H1</span><span class="token operator">></span>
-</span><span class="code-line">    <span class="token operator">&#x3C;</span><span class="token operator">/</span>div<span class="token operator">></span>
-</span><span class="code-line">  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-</span><span class="code-line"><span class="token punctuation">}</span>
-</span><span class="code-line">
-</span><span class="code-line"><span class="token keyword">const</span> <span class="token constant">H1</span> <span class="token operator">=</span> styled<span class="token punctuation">.</span><span class="token property-access">h1</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token css language-css">
-</span></span></span><span class="code-line"><span class="token template-string"><span class="token css language-css">  <span class="token property">color</span><span class="token punctuation">:</span> <span class="token color">red</span><span class="token punctuation">;</span>
-</span></span></span><span class="code-line"><span class="token template-string"><span class="token css language-css"></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
-</span></code></pre>
-<p>with line highlight</p>
-<pre class="language-js"><code class="language-js code-highlight"><span class="code-line highlight-line"><span class="token keyword module">import</span> <span class="token imports">styled</span> <span class="token keyword module">from</span> <span class="token string">'@emotion/styled'</span><span class="token punctuation">;</span>
-</span><span class="code-line">
-</span><span class="code-line"><span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token keyword">function</span> <span class="token function"><span class="token maybe-class-name">Foo</span></span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> bar <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line">  <span class="token keyword control-flow">return</span> <span class="token punctuation">(</span>
-</span><span class="code-line">    <span class="token operator">&#x3C;</span>div<span class="token operator">></span>
-</span><span class="code-line">      <span class="token operator">&#x3C;</span><span class="token constant">H1</span><span class="token operator">></span><span class="token maybe-class-name">Comet</span><span class="token operator">-</span>land<span class="token operator">&#x3C;</span><span class="token operator">/</span><span class="token constant">H1</span><span class="token operator">></span>
-</span><span class="code-line">    <span class="token operator">&#x3C;</span><span class="token operator">/</span>div<span class="token operator">></span>
-</span><span class="code-line">  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-</span><span class="code-line"><span class="token punctuation">}</span>
-</span><span class="code-line">
-</span><span class="code-line highlight-line"><span class="token keyword">const</span> <span class="token constant">H1</span> <span class="token operator">=</span> styled<span class="token punctuation">.</span><span class="token property-access">h1</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token css language-css">
-</span></span></span><span class="code-line highlight-line"><span class="token template-string"><span class="token css language-css">  <span class="token property">color</span><span class="token punctuation">:</span> <span class="token color">red</span><span class="token punctuation">;</span>
-</span></span></span><span class="code-line highlight-line"><span class="token template-string"><span class="token css language-css"></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
-</span></code></pre>
-<p>with line number</p>
-<pre class="language-js"><code class="language-js code-highlight"><span class="code-line line-number highlight-line" line="1"><span class="token keyword module">import</span> <span class="token imports">styled</span> <span class="token keyword module">from</span> <span class="token string">'@emotion/styled'</span><span class="token punctuation">;</span>
-</span><span class="code-line line-number" line="2">
-</span><span class="code-line line-number highlight-line" line="3"><span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token keyword">function</span> <span class="token function"><span class="token maybe-class-name">Foo</span></span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> bar <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="code-line line-number" line="4">  <span class="token keyword control-flow">return</span> <span class="token punctuation">(</span>
-</span><span class="code-line line-number" line="5">    <span class="token operator">&#x3C;</span>div<span class="token operator">></span>
-</span><span class="code-line line-number" line="6">      <span class="token operator">&#x3C;</span><span class="token constant">H1</span><span class="token operator">></span><span class="token maybe-class-name">Comet</span><span class="token operator">-</span>land<span class="token operator">&#x3C;</span><span class="token operator">/</span><span class="token constant">H1</span><span class="token operator">></span>
-</span><span class="code-line line-number" line="7">    <span class="token operator">&#x3C;</span><span class="token operator">/</span>div<span class="token operator">></span>
-</span><span class="code-line line-number" line="8">  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-</span><span class="code-line line-number" line="9"><span class="token punctuation">}</span>
-</span><span class="code-line line-number" line="10">
-</span><span class="code-line line-number" line="11"><span class="token keyword">const</span> <span class="token constant">H1</span> <span class="token operator">=</span> styled<span class="token punctuation">.</span><span class="token property-access">h1</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token css language-css">
-</span></span></span><span class="code-line line-number" line="12"><span class="token template-string"><span class="token css language-css">  <span class="token property">color</span><span class="token punctuation">:</span> <span class="token color">red</span><span class="token punctuation">;</span>
-</span></span></span><span class="code-line line-number" line="13"><span class="token template-string"><span class="token css language-css"></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
-</span></code></pre>
-<h2 id="links" class="heading">Links</h2>
-<ul>
-<li><a href="https://nextjs.org" target="_blank" rel="noopener noreferer">Next.js</a></li>
-<li><a href="http://vercel.com" target="_blank" rel="noopener noreferer">Vercel</a></li>
-</ul>
-<h3 id="autolink">Autolink</h3>
-<p><a href="http://www.example.com" target="_blank" rel="noopener noreferer">www.example.com</a>, <a href="https://example.com" target="_blank" rel="noopener noreferer">https://example.com</a>, and <a href="mailto:contact@example.com">contact@example.com</a>.</p>
-<h2 id="footnote" class="heading">Footnote</h2>
-<p>A note<sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref aria-describedby="footnote-label">1</a></sup></p>
-<h2 id="table" class="heading">Table</h2>
-<table>
-<thead>
-<tr>
-<th align="left">Syntax</th>
-<th align="center">Description</th>
-<th align="right">Test Text</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">Header</td>
-<td align="center">Title</td>
-<td align="right">Here's this</td>
-</tr>
-<tr>
-<td align="left">Paragraph</td>
-<td align="center">Text</td>
-<td align="right">And more</td>
-</tr>
-<tr>
-<td align="left">Strikethrough</td>
-<td align="center"></td>
-<td align="right"><del>Text</del></td>
-</tr>
-</tbody>
-</table>
-<h2 id="tasklist" class="heading">Tasklist</h2>
-<ul class="contains-task-list">
-<li class="task-list-item"><input type="checkbox" disabled> to do</li>
-<li class="task-list-item"><input type="checkbox" checked disabled> done</li>
-</ul>
-<section data-footnotes class="footnotes"><h2 id="footnote-label" class="sr-only heading">Footnotes</h2>
-<ol>
-<li id="user-content-fn-1">
-<p>Big note. <a href="#user-content-fnref-1" data-footnote-backref class="data-footnote-backref" aria-label="Back to content">↩</a></p>
-</li>
-</ol>
-</section>]]>
     </content:encoded>
   </item>
     </channel>
